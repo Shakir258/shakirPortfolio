@@ -394,30 +394,67 @@ h3 {
 
 .project-box {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     width: 30%;
-    height: 250px;
+    /* padding: 10px; */
+    height: fit-content;
     background: var(--color-white);
     border-radius: 20px;
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     overflow: hidden;
+    transition: .4s;
 }
 
-.project-box>i {
-    font-size: 50px;
-    color: #00B5E7;
-    margin-bottom: 25px;
+.project-box:hover {
+    
+    /* z-index: 10; */
+
+    overflow:visible;
 }
 
-.project-box label {
-    font-size: 15px;
-    color: #777;
+.project-image {
+    width: 100%;
+    height: 350px;
+    /* overflow: hidden; */
+    transition: .4s;
 }
 
-.project-box::after,
+.project-image>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: .4s;
+}
+
+.project-image>img:hover {
+    transform: scale(1.1);
+    transition: .4s;
+    z-index: 10;
+    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.project-info {
+    /* background: red; */
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+}
+
+.project-info>h3 {
+    /* color: var(--text-color-second); */
+    /* font-size: 20px; */
+    margin-bottom: 0px;
+}
+.project-info>h3>a{
+    text-decoration: none;
+    color: var(--text-color-second);
+    font-size: 20px;
+}
+
+
 .contact-info::after {
     content: "";
     position: absolute;
@@ -434,12 +471,12 @@ h3 {
     bottom: 0;
 }
 
-.project-box:hover.project-box i,
+/* .project-box:hover.project-box i,
 .project-box:hover.project-box>h3,
 .project-box:hover.project-box>label {
     color: var(--color-white);
     z-index: 2;
-}
+} */
 
 /* ----- CONTACT BOX ----- */
 .contact-info {

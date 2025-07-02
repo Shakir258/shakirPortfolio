@@ -115,3 +115,64 @@ function scrollActive() {
 }
 
 window.addEventListener('scroll', scrollActive)
+
+
+
+const projects = [
+  {
+    image: "assets/images/shareCab.png",
+    title: "ShareCab",
+    description: "A cab-sharing application that allows users to book and share rides with others going in the same direction, designed for daily commuters.",
+    link: "http://youtube.com"
+  },
+  {
+    image: "assets/images/potfolio.png",
+    title: "My Portfolio",
+    description: "A modern and interactive portfolio website with smooth animations, Glass UI, and detailed sections for skills, projects, and contact.",
+    link: "#home"
+  },
+  {
+    image: "assets/images/foodie.png",
+    title: "FoodieWeb",
+    description: "A stylish food delivery web app for browsing restaurants, viewing menus, and placing online orders.",
+    link: "https://foodieweb258.netlify.app/"
+  },
+  {
+    image: "assets/images/traveler.png",
+    title: " Traveler Website",
+    description: "A travel booking website to explore destinations, compare packages, and plan trips with ease and convenience.",
+    link: "https://trippixie258.netlify.app/"
+  },
+  {
+  image: "assets/images/estudy.png",
+  title: "eStudy Platform",
+  description: "An eLearning website offering a wide range of academic and practical courses with a user-friendly interface.",
+  link: "https://estudy258.netlify.app/"
+},
+{
+  image: "assets/images/premier.png",
+  title: "Premier Studio",
+  description: "A creative portfolio website for photography and film showcasing, featuring elegant UI and carousel display.",
+  link: "https://shakir1234.netlify.app/"
+}
+];
+
+
+const container = document.getElementById("project-container");
+
+projects.forEach(project => {
+  const box = document.createElement("div");
+  box.className = "project-box";
+
+  box.innerHTML = `
+    <div class="project-image">
+      <img src="${project.image}" alt="${project.title}">
+    </div>
+    <div class="project-info">
+      <h3><a href="${project.link}" target="_blank" rel="noopener noreferrer">${project.title}</a></h3>
+      <p>${project.description}</p>
+    </div>
+  `;
+
+  container.appendChild(box);
+});
