@@ -169,6 +169,7 @@ nav {
 /* ----- WRAPPER DESIGN ----- */
 .wrapper {
     padding-inline: 10vw;
+    background: yellow;
 }
 
 /* ----- FEATURED BOX ----- */
@@ -719,7 +720,7 @@ footer {
     }
 
     .project-box {
-        width: 80%;
+        width: 90%;
     }
 
 }
