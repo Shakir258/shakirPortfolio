@@ -158,7 +158,7 @@ const projects = [
 ];
 
 
-const container = document.getElementById("project-container");
+const container = document.getElementById("project-container1");
 
 projects.forEach(project => {
   const box = document.createElement("div");
