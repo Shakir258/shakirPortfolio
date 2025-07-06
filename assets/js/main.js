@@ -127,6 +127,12 @@ const projects = [
   },
   
   {
+    image: "assets/images/traveler.png",
+    title: " Traveler Website",
+    description: "A travel booking website to explore destinations, compare packages, and plan trips with ease and convenience.",
+    link: "https://trippixie258.netlify.app/"
+  },
+  {
     image: "assets/images/foodie.png",
     title: "FoodieWeb",
     description: "A stylish food delivery web app for browsing restaurants, viewing menus, and placing online orders.",
@@ -137,12 +143,6 @@ const projects = [
     title: "My Portfolio",
     description: "A modern and interactive portfolio website with smooth animations, Glass UI, and detailed sections for skills, projects, and contact.",
     link: "#home"
-  },
-  {
-    image: "assets/images/traveler.png",
-    title: " Traveler Website",
-    description: "A travel booking website to explore destinations, compare packages, and plan trips with ease and convenience.",
-    link: "https://trippixie258.netlify.app/"
   },
   {
   image: "assets/images/estudy.png",
