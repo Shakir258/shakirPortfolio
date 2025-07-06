@@ -125,17 +125,18 @@ const projects = [
     description: "A cab-sharing application that allows users to book and share rides with others going in the same direction, designed for daily commuters.",
     link: "http://youtube.com"
   },
-  {
-    image: "assets/images/potfolio.png",
-    title: "My Portfolio",
-    description: "A modern and interactive portfolio website with smooth animations, Glass UI, and detailed sections for skills, projects, and contact.",
-    link: "#home"
-  },
+  
   {
     image: "assets/images/foodie.png",
     title: "FoodieWeb",
     description: "A stylish food delivery web app for browsing restaurants, viewing menus, and placing online orders.",
     link: "https://foodieweb258.netlify.app/"
+  },
+  {
+    image: "assets/images/potfolio.png",
+    title: "My Portfolio",
+    description: "A modern and interactive portfolio website with smooth animations, Glass UI, and detailed sections for skills, projects, and contact.",
+    link: "#home"
   },
   {
     image: "assets/images/traveler.png",
@@ -169,7 +170,7 @@ projects.forEach(project => {
       <img src="${project.image}" alt="${project.title}">
     </div>
     <div class="project-info">
-      <h3><a href="${project.link}" target="_blank" rel="noopener noreferrer">${project.title}</a></h3>
+      <h3><a href="${project.link}" target="_blank" rel="noopener noreferrer">${project.title}<span> <i class="uil uil-link"></i></span></a></h3>
       <p>${project.description}</p>
     </div>
   `;

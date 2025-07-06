@@ -313,7 +313,7 @@ nav {
 
 .col {
     display: flex;
-    width: 50%;
+    width: 100%;
 }
 
 /* -- ## --- RESUABLE CSS -- ## -- */
@@ -397,55 +397,51 @@ h3 {
 
 /* ----- PROJECTS BOX ----- */
 .project-container {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
+    column-width: 300px;
+    /* height: fit-content; */
+    /* border-radius: 20px; */
     gap: 20px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .project-box {
     position: relative;
-    width: 30%;
+    width: 100%;
     /* padding: 10px; */
-    height: fit-content;
+    margin-bottom: 20px;
+    height: 110%;
     background: var(--color-white);
-    border-radius: 20px;
+    /* border-radius: 10px; */
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     overflow: hidden;
-    transition: .4s;
+    transition: .3s ease-in-out;
 }
 
 .project-box:hover {
 
     /* z-index: 10; */
-
+    box-shadow: 1px 6px 10px 10px var(--first-shadow-color);
+    /* border-radius: 10px; */
     overflow: visible;
 }
 
 .project-image {
     width: 100%;
-    height: 350px;
-    /* overflow: hidden; */
-    transition: .4s;
+    height: fit-content;
+    overflow: hidden;
+    transition: 1s;
 }
 
 .project-image>img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
-    transition: .4s;
+    transition: 1s ease-in-out;
+
 }
 
-.project-image>img:hover {
-    transform: scale(1.1);
-    transition: .4s;
-    z-index: 10;
-    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
-    border-radius: 10px;
-    object-fit: contain;
-}
+
 
 .project-info {
     /* background: red; */
