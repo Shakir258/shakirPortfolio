@@ -33,7 +33,7 @@ function headerShadow() {
 
 /* ----- TYPING EFFECT ----- */
 var typingEffect = new Typed(".typedText", {
-  strings: ["Web Developer","Designer", "Youtuber"],
+  strings: ["Software Engineer","Website Developer"],
   loop: true,
   typeSpeed: 100,
   backSpeed: 80,
@@ -123,7 +123,7 @@ const projects = [
     image: "assets/images/shareCab.png",
     title: "ShareCab",
     description: "A cab-sharing application that allows users to book and share rides with others going in the same direction, designed for daily commuters.",
-    link: "http://youtube.com"
+    link: "https://github.com/shakir258/ShareCab"
   },
   
   {
